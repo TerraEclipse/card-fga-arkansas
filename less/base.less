@@ -1,0 +1,203 @@
+// ===========================================
+// BASE STYLES
+// ===========================================
+
+* {
+  .box-sizing;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'ff-ernestine-web-pro', 'Helvetica Neue', 'Helvetica', sans-serif;
+  color: #fff;
+}
+
+body {
+  background: #000 url('img/card-bg.jpg') no-repeat top left;
+}
+section,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+h1,
+h2 strong {
+  font-weight: 700;
+  color: #FFC237;
+}
+h1 {
+  .rotate(2.3deg);
+  font-family: 'alternate-gothic-no-1-d', 'Helvetica Neue', 'Helvetica', sans-serif;
+  font-size: 86px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: -2px;
+  text-shadow: 0 4px 3px rgba(0,0,0,0.3);
+
+  .ellipsis {
+    letter-spacing: -5px;
+  }
+}
+h2 {
+  max-width: 540px;
+  margin-left: -25px;
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: -1px;
+  text-shadow: 0 3px 3px rgba(0, 0, 0, 0.35);
+
+  strong {
+    letter-spacing: 0;
+  }
+}
+
+// MASTHEAD
+.masthead {
+  width: 100%;
+  height: 264px;
+  margin-top: 7px;
+  background: url('img/speech-bubble.png') no-repeat top left;
+
+  .target-image,
+  .masthead-copy {
+    position: absolute;
+  }
+  .target-image {
+    left: 20px;
+    width: 229px;
+    height: 218px;
+
+    .target-outline,
+    .target-photo {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+    }
+    .target-outline {
+      background: url('img/target-outline.png');
+      z-index: 1;
+    }
+    .target-photo {
+      z-index: 0;
+
+      img {
+        .rotate(-7deg);
+        position: absolute;
+        top: 15px;
+        left: 20px;
+      }
+    }
+  }
+  .masthead-copy {
+    top: 34px;
+    right: 28px;
+    text-align: center;
+    z-index: 2;
+  }
+}
+
+.signature {
+  margin-top: -51px;
+  text-align: center;
+
+  .avatar,
+  .signature-copy {
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+  }
+  .avatar {
+    position: relative;
+    width: 152px;
+    height: 152px;
+
+    .avatar-outline,
+    .avatar-photo {
+      position: absolute;
+    }
+    .avatar-outline {
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: url('img/avatar-outline.png');
+      z-index: 1;
+    }
+    .avatar-photo {
+      top: 12px;
+      left: 9px;
+      z-index: 0;
+
+      .photo-wrapper {
+        width: 132px;
+        height: 127px;
+        font-size: 0;
+        overflow: hidden;
+
+        img {
+          width: 132px;
+        }
+      }
+    }
+  }
+  .signature-copy {
+    padding-top: 6px;
+    padding-left: 10px;
+    
+    .message {
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 24px;
+      text-shadow: 0 3px 3px rgba(0, 0, 0, 0.35);
+    }
+    strong {
+      color: #FFC237;
+      text-transform: uppercase;
+    }
+    em {
+      font-style: italic;
+    }
+    .name {
+      margin-top: 21px;
+    }
+    .first-last,
+    .hometown {
+      display: block;
+    }
+    .first-last {
+      font-family: 'alternate-gothic-no-1-d', 'Helvetica Neue', 'Helvetica', sans-serif;
+      font-size: 42px;
+      color: #FFC237;
+      text-transform: uppercase;
+    }
+    .hometown {
+      font-weight: 600;
+    }
+  }
+}
+
+.footer {
+  margin-top: 5px;
+  font-size: 14px;
+  text-align: center;
+  
+  .footer-copy,
+  .link .un {
+    font-weight: 600;
+    color: #FFC426;
+  }
+  .link {
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+  }
+}

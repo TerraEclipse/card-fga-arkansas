@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    {{{styles}}}
+    <script src="//use.typekit.net/abg2cpg.js"></script>
+    <script>try{Typekit.load();}catch(e){}</script>
+  </head>
+
+  <body>
+    <section class="masthead">
+      <div class="target-image">
+        <div class="target-outline">&nbsp;</div>
+        <div class="target-photo">
+          {{#if variants}}
+            <img src="{{target_image}}">
+          {{else}}
+            <img src="./img/herbert.jpg">
+          {{/if}}
+        </div>
+      </div>
+      <div class="masthead-copy">
+        <h1>
+          {{#if variants}}
+            Hey, {{target_title}} {{target_last}}...
+          {{else}}
+            Hey, Governor Hutchinson<span class="ellipsis">...</span>
+          {{/if}}
+        </h1>
+        <h2>I support a <strong>FULL-REPEAL</strong> of Arkansas' Medicaid expansion. <strong>NO excuses!</h2>
+      </div>
+    </section>
+
+    <section class="signature">
+      <div class="avatar">
+        <div class="avatar-outline">&nbsp;</div>
+        <div class="avatar-photo">
+          <div class="photo-wrapper">
+            {{#if avatar}}
+              <img src="{{avatar}}">
+            {{else}}
+              <img src="./img/avatar.jpg">
+            {{/if}}
+          </div>
+        </div>
+      </div>
+      <div class="signature-copy">
+        <p class="name">
+          <span class="first-last">{{first}} {{last}}</span>
+          <span class="hometown">
+            {{city}}
+            {{#if state}}
+              {{#if city}}
+                ,
+              {{/if}}
+            {{/if}}
+            {{#if city}}
+              {{state}}
+            {{else}}
+              {{state_full}}
+            {{/if}}
+          </span>
+        </p>
+      </div>
+    </section>
+
+    <section class="footer">
+      <p class="footer-copy">Learn more about what ObamaCare expansion means for Arkasas at <span class="link">www.<span class="un">un</span>healthyutah.com</span></p>
+    </section>
+  </body>
+</html>

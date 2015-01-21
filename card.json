@@ -1,0 +1,33 @@
+{
+  "title": "FGA Arkansas Card",
+  "description": "Repeal Obamacare's Private Option Expansion",
+  "typekit": true,
+  "sizes": {
+    "twitter": {
+      "width": 800,
+      "height": 400,
+      "default": true
+    }
+  },
+  "styles": [
+    "./styles.css"
+  ],
+  "variables": {
+    "first": "Your",
+    "last": "Name",
+    "city": "Your Hometown",
+    "state": "",
+    "state_full": "Your Hometown",
+    "avatar": "./img/avatar.jpg"
+  },
+  "variants": {
+    "herbert": {
+      "variables": {
+        "target_title": "Governor",
+        "target_first": "Asa",
+        "target_last": "Hutchinson",
+        "target_image": "./img/hutchinson.jpg"
+      }
+    }
+  }
+}
